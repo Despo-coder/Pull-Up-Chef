@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/pullup_chef_logo-sm.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="overlay has-fade">
+        </div>
+    
+        <nav class="flex container container--pall flex-jc-sb flex-ai-c">
+            <div><a href="#" class="header__logo">
+                    <img class="logo_image" src="./images/pullup_chef_logo.jpg" alt="EasyBank">
+                </a></div>
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
+    
+                <!-- hide-for-desktop -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <div class="header__links hide-for-mobile">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="#">Pricing</a>
+                <a href="#">Events</a>
+                <a href="#">Gallery</a>
+                <!-- <a href="#">Bookings</a> -->
+            </div>
+            <a href="" class=" buttons nav-cta-btn header__cta 
+    hide-for-mobile">Check FAQ/Prcing</a>
+        </nav>
+        <div class="header__menu container has-fade hide-for-desktop">
+            <a href="#">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="#">Pricing</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+            <!-- <a href="#">Bookings</a> -->
+        </div>
+    </header>
+    <section class="booking">
+        <div class="container" >
+    <!-- </section> -->
+<!-- <section class="booking flex flex-jc-sb"> -->
+    <div class=" booking__thanks container--pall container--mw">
+        <h2 >Thank you for booking with Us</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusamus neque laborum laudantium eaque? Commodi quidem impedit facilis ab modi ullam rerum autem rem? Commodi hic at possimus. Placeat, aut.</p>
+        
+    </div><div class="booking__form">
+        <form action="https://formsubmit.co/kandkbeautyca@gmail.com" method="POST">
+            <div class="form-control">
+                <input type="hidden" name="_next" value="https://despo-testwebsite.netlify.app/docs.html">
+                <label for="name">Name</label>
+                <input type="text" id ="name" name="name" placeholder="Name" required>
+            </div>
+            <div class="form-control">
+                <label for="Location">Location</label>
+<select name="location" id="location" placeholder="Select Location">
+   <option value=""><Canvas>Select a location</Canvas></option>
+    <option value="GTA">GTA</option>
+    <option value="Cambridgr">Cambridge</option>
+    <option value="London">London</option>
+    <option value="Windsor">Windsor</option>
+</select>
+                <!-- <input type="text" id ="Location" name="Location" placeholder="Location" required> -->
+            </div>
+            <div class="form-control">
+                <input type="text" name="email" placeholder="Email Address" required>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary">
+            <!-- <div class="form-control">
+                            <input type="text" name="name" placeholder="Name">
+                        </div> -->
+        </form>
+    </div>
+    </div>
+</section>
+
+  <section class="questions">
+
+      <!-- title-  -->
+      <div class="questions__title">
+          <h2>General/Frequent Questions</h2>
+      </div>
+      <div class="questions__section-center">
+        <article class="questions__question">
+            <div class="questions__question-title">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="question-btn">
+                <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+                </span>
+                <span class="minus-icon">
+                    <i class="far fa-minus-square"></i>
+                </span>
+                </button>
+            </div>
+            <div class="question-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, odit.</p>
+            </div>
+        </article>
+        <article class="questions__question">
+            <div class="questions__question-title">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <button type="button" class="question-btn">
+                    <span class="plus-icon">
+                        <i class="far fa-plus-square"></i>
+                    </span>
+                    <span class="minus-icon">
+                        <i class="far fa-minus-square"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="question-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, odit.</p>
+            </div>
+        </article>
+      </div>
+  </section>
+
+<script src="./app.js"></script>
+</body>
+</html>

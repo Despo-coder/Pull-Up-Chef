@@ -1,0 +1,13 @@
+.about1 {
+  h1,
+  h2,
+  h3,
+  blockquote {
+    padding: o;
+    margin: 0;
+  }
+  &__img {
+    display: block;
+    max-width: 100%;
+  }
+}
