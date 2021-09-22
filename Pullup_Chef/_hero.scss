@@ -1,0 +1,95 @@
+.hero {
+  background-color: $VeryLight-Gray;
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    // background-image: url("/images/hero_background.png");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // min-height: 17.5rem;
+    box-shadow: 0px 3px 10px rgba(192, 13, 13, 0.15);
+    border-radius: 20px;
+    overflow: hidden;
+    @include breakpoint-up(medium) {
+      min-height: 25rem;
+      background-position: center 45%;
+      box-shadow: 0px 3px 10px rgba(51, 9, 9, 0.15);
+    }
+    @include breakpoint-up(large) {
+      flex: 3;
+      order: 2;
+      height: 41rem;
+      margin-top: 3px;
+      background-image: none;
+      // background-image: url("/images/bg-intro-desktop.svg");
+      // background-position: left center;
+    }
+
+    // &::before {
+    //   @include breakpoint-up(large) {
+    //     content: "";
+    //     position: absolute;
+    //     height: 100%;
+    //     //width: 100%;
+    //     background-image: url("/images/hero_background.png");
+    //     //background-size: 93%;
+    //     background-repeat: no-repeat;
+    //     background-position: center bottom;
+    //     //left: 24px;
+    //     border-radius: 20px;
+    //     width: 165%;
+    //     overflow: hidden;
+    //     background-size: 68%;
+    //     background-position: 0% 99%;
+    //   }
+    // }
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   height: 100%;
+    //   width: 100%;
+    //   // background-image: url("/images/hero_background.png");
+    //   background-size: 94%;
+    //   background-repeat: no-repeat;
+    //   background-position: center bottom;
+
+    //   @include breakpoint-up(medium) {
+    //     background-size: 52%;
+    //   }
+
+    //   @include breakpoint-up(large) {
+    //     //background-image: url("/images/image-mockups.png");
+    //     background-size: 91%;
+    //     background-repeat: no-repeat;
+    //     background-position: center 150%;
+    //     left: 22%;
+    //   }
+    // }
+  }
+
+  &__text {
+    text-align: center;
+    @include breakpoint-up(large) {
+      flex: 2;
+      order: 1;
+      text-align: left;
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: 2.25;
+      span {
+        color: $raisinblack;
+        text-decoration: underline;
+        cursor: grab;
+      }
+    }
+  }
+}

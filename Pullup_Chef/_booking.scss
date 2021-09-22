@@ -1,0 +1,86 @@
+.booking {
+  background-color: $VeryLight-Gray;
+  .container {
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__form {
+    @include breakpoint-up(large) {
+      margin: 0 auto;
+      line-height: 2rem;
+    }
+  }
+}
+.questions {
+  min-height: 10vh;
+  display: grid;
+  place-items: center;
+
+  &__title {
+    margin-top: 1.5vh;
+    margin-bottom: 4rem;
+  }
+
+  &__question {
+    background: $GrayishBlue;
+    border-radius: 0.5rem;
+    box-shadow: $darkcolor;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+  }
+  &__question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+  }
+  &__question-title p {
+    margin-bottom: 0;
+    letter-spacing: normal;
+    color: $DarkBlue;
+  }
+
+  .question-btn {
+    font-size: 1rem;
+    // background: transparent;
+    // border-color: transparent;
+    cursor: pointer;
+    color: var(--clr-gold);
+    transition: all 0.3s linear;
+  }
+  .question-btn:hover {
+    transform: rotate(90deg);
+  }
+  .question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .question-text p {
+    margin-bottom: 0;
+  }
+  .question-text {
+    display: none;
+    color: $DarkBlue;
+  }
+  .show-text .question-text {
+    display: block;
+  }
+  .minus-icon {
+    display: none;
+  }
+  .show-text .minus-icon {
+    display: inline;
+  }
+  .show-text .plus-icon {
+    display: none;
+  }
+  &__section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 420px;
+  }
+}
